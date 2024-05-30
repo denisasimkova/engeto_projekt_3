@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Denisa Simkova -->
+  <!-- denisa.hynkova@email.cz -->
+  <!-- denisasimkova -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Komplexní webová stránka</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap"
+    rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script
+    src="https://kit.fontawesome.com/8ba26cb1dc.js"
+    crossorigin="anonymous"
+  ></script>
+
+  </head>
+  <body>
+    <!-- SCROLL TO TOP BUTTON -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up"></i></button>
+
+    <!-- HEADER -->
+    <header>
+      <!-- logo -->
+      <div class="logo">
+        <img src="./images/Logo SD_white.png" alt="" />
+      </div>
+
+      <!-- navigation menu -->
+      <nav>
+        <ul>
+          <li><a href="#projects">Home</a></li>
+          <li><a href="#projects">Realizované projekty</a></li>
+          <li><a href="#psw">Kontaktní formulář</a></li>
+          <li><a href="#work">Co dělám</a></li>
+        </ul>
+      </nav>
+
+      <!-- icon-bars -->
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+        <!-- <i class="fa-solid fa-xmark"></i> -->
+      </div>
+
+      <!-- switcher -->
+      <div class="switcher-box">
+        <span class="switcher-description">
+
+          <i class="fa-regular fa-sun"></i>
+          <!-- <i class="fa-solid fa-moon"></i> -->
+        </span>
+        
+        <!-- Rounded switch -->
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <!-- PROJECTS / GALLERY -->
+      <section class="projects" id="projects">
+        <h2>Realizované projekty</h2>
+        <p>
+          Podívejte se na výběr projektů, na kterých jsem pracovala. Každý z
+          nich je výsledkem pečlivé práce, kreativity a spolupráce s klienty.
+          Inspirujte se a zjistěte, co mohu vytvořit i pro vás.
+        </p>
+        <hr />
+        <div class="gallery">
+          <div class="photo-1 galleryitem"></div>
+          <div class="photo-2 galleryitem"></div>
+          <div class="photo-3 galleryitem"></div>
+          <div class="photo-4 galleryitem"></div>
+          <div class="photo-5 galleryitem"></div>
+          <div class="photo-6 galleryitem"></div>
+        </div>
+        <span id="psw"></span>
+      </section>
+
+      <!-- PASSWORD CHECK -->
+      <section class="password-form">
+        <h2>Validace hesla</h2>
+        <p class="main-p-form">
+          Ve formuláři se bude 2x zadávat heslo a formulář bude kontrolovat
+          shodu hesel. <br>
+          Po zadání hesla, které se neshoduje se po kliknutí jinam zobrazí hláška - hesla se musí shodovat.
+        </p>
+        <hr class="main-hr" />
+
+        <div class="form-container">
+            <form id="form">
+              <div class="input-container">
+                <input type="password" id="password" aria-describedby="requirements" required />
+                <label for="password">Heslo</label>
+                <button class="show-password" id="show-password" type="button" role="switch" aria-label="Show password" aria-checked="false"><i class="fa-solid fa-eye"></i></button>
+              </div>
+          
+              <div class="input-container">
+                <input type="password" id="confirm-password" required />
+                <label for="confirm-password">Potvrďte heslo</label>
+              </div>
+          
+              <div class="password-requirements">
+                <p class="requirement hidden error" id="match">Hesla se musí shodovat</p>
+              </div>
+          
+            </form>
+          </div>
+      </section>
+
+      <!-- WORK -->
+      <section class="work" id="work">
+        <h2>Kreativní služby dle Vašich přání</h2>
+
+        <div class="work-wrapper">
+          <!--first card-->
+          <div class="review-card">
+            <i class="fa-solid fa-palette"></i>
+            <div class="name">Grafický design</div>
+            <hr />
+            <p class="text-review">
+              Kvalitní grafický design je základem každé úspěšné značky. Vdechne
+              vaším představám život a přinese radost nejen vám ale i vaším
+              zákazníkům. Vytvořím loga a vizuální identitu, vizitky, plakáty a
+              další tiskoviny, které zaujmou na první pohled a zanechají trvalý
+              dojem. Marketingové materiály - od brožur, katalogů až po další
+              propagační materiály. Neopomenu ani odvětví sociálních médií a
+              online prostředí.
+            </p>
+          </div>
+
+          <!--second card-->
+          <div class="review-card">
+            <i class="fa-solid fa-desktop"></i>
+            <div class="name">Webdesign</div>
+            <hr />
+            <p class="text-review">
+              V dnešním digitálním světě je atraktivní webová stránka klíčem k
+              úspěchu. Věřím, že každá webová stránka by měla být nejen funkční,
+              ale také radostným zážitkem pro její uživatele. Vytvořím
+              individuální design šitý na míru vaším potřebám s důrazem na
+              estetiku, funkčnost a uživatelskou přívětivost. Nebude chybět ani
+              návrh responzivního designu - od desktopu po mobilní zařízení.
+            </p>
+          </div>
+
+          <!--third card-->
+          <div class="review-card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <div class="name">Web od A do Z</div>
+            <hr />
+            <p class="text-review">
+              Vytvoření webové stránky je komplexní proces, který vyžaduje
+              pečlivé plánování a koordinaci mnoha prvků. Přes analýzu potřeb
+              klienta, tvorbě designu, kódování, copywrightingu až po SEO
+              optimalizaci, aby byl Váš web dobře viditelný. Transparentní
+              rozpočet a dodržení termínů jsou pro mě samozřejmostí, stejně jako
+              důkladné testování před spuštěním webu.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+          <a href="#">Kontakt</a>
+          <p>© 2024 - Všechna práva vyhrazena.</p>
+        </div>
+      </footer>
+    <script src="script.js"></script>
+  </body>
+
+</html>

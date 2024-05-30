@@ -1,0 +1,93 @@
+/* HEADER - READY FOR JS */
+@media (max-width: 650px) {
+  header {
+    position: fixed;
+  }
+
+  header nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    background-color: #292929;
+    width: 100%;
+  }
+
+  header nav li {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .menu-icon {
+    display: block;
+    color: white;
+    font-size: 20px;
+  }
+
+  header ul a:hover {
+    color: #cae81d;
+  }
+}
+
+@media (min-width: 650px) {
+  header nav {
+    display: block !important;
+  }
+}
+
+/* OTHER QUERY */
+@media (min-width: 756px) {
+  .main-container {
+    width: 95%;
+  }
+
+  .projects p {
+    width: 95%;
+  }
+}
+
+@media (max-width: 912px) {
+  .projects p {
+    width: 100%;
+  }
+  .container {
+    padding: 30px;
+  }
+
+  /* GALLERY */
+  .galleryitem {
+    width: 41rem;
+  }
+
+  /* WORK */
+  .work-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .review-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 853px) {
+  .logo img {
+    margin-left: 1.5rem;
+    margin-top: 0.2rem;
+  }
+
+  header ul a {
+    font-size: 14px;
+  }
+
+  .projects h2 {
+    padding-top: 110px;
+  }
+
+  .gallery {
+    margin-bottom: 2rem;
+  }
+}
